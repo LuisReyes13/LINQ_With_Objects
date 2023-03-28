@@ -24,9 +24,13 @@ namespace LINQ
         public List<Empresa> listaEmpresas;
         public List<Empleado> listaEmpleados;
 
-        public void getCEO()
+        public void getET()
         {
-            IEnumerable<Empleado> ceos = from e in listaEmpleados where e.Cargo == "CEO" select e;
+            IEnumerable<Empleado> et = from e in listaEmpleados where e.Cargo == "ET" select e;
+            foreach (Empleado e in et)
+            {
+                e.getDatosEmpleado();
+            }
         }
     }
 }

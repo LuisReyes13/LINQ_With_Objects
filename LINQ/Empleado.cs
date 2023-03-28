@@ -17,7 +17,7 @@ namespace LINQ
 
         public void getDatosEmpleado()
         {
-            Console.WriteLine($"Empleado {Nombre} con Id {Id}, cargo {Cargo} con salario {Salario} y pertenece a la empresa {IdEmpresa}");
+            Console.WriteLine($"Empleado {Nombre} con Id {Id}, cargo {Cargo}, con salario {Salario} y pertenece a la empresa {IdEmpresa}");
         }
     }
 }
